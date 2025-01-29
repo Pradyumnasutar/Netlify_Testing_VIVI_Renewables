@@ -78,7 +78,7 @@ const CustomerInquiryForm = () => {
           <Row className="mb-3">
             <Col md={12}>
               <Form.Group controlId="monthlyBill">
-                <Form.Label>Average Monthly Bill</Form.Label>
+                <Form.Label>Average Monthly Bill (₹)</Form.Label>
                 <Form.Control
                   type="number"
                   {...register('monthlyBill', { required: "Monthly bill is required" })}

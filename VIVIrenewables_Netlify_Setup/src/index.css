@@ -47,12 +47,16 @@ h2 {
 }
 /* Custom Styles for Carousel */
 .custom-carousel {
-  max-width: 80%;  /* Adjust the width of the carousel */
+  max-width: 95%;  /* Adjust the width of the carousel */
   margin: 0 auto;  /* Center the carousel horizontally */
 }
 
 .custom-carousel img {
-  height: 400px;  /* Set a fixed height for the images */
+  height: 500px;  /* Set a fixed height for the images */
   object-fit: cover;  /* Ensure the images are cropped to fit */
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

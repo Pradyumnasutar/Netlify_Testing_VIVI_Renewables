@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* For smaller screens, reduce the image height */
+@media (max-width: 768px) {
+  .card-img-fixed {
+    height: 150px; /* Adjust height on smaller screens */
+  }
+}
+
+/* For larger screens, you can keep it fixed or increase the height */
+@media (min-width: 768px) {
+  .card-img-fixed {
+    height: 200px; /* Adjust height on larger screens */
+  }
+}
