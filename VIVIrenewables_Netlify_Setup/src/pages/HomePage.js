@@ -19,7 +19,7 @@ const HomePage = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3></h3>
+            <h3>First Slide</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +29,7 @@ const HomePage = () => {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3></h3>
+            <h3>Second Slide</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -39,7 +39,7 @@ const HomePage = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3></h3>
+            <h3>Third Slide</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
