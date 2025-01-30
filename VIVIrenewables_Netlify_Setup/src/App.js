@@ -5,6 +5,7 @@ import NavbarComponent from './components/Navbar';
 
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
+import ServicePage from './pages/ServicePage';
 import CustomerInquiryPage from './components/CustomerInquiryForm';
 import FooterComponent from './components/Footer';
 
@@ -16,8 +17,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
         {/* Uncomment these lines when services and products pages are available */}
-        {/* <Route path="/services" element={<ServicesPage />} />
-        <Route path="/products" element={<ProductsPage />} /> */}
+        <Route path="/services" element={<ServicePage />} />
+        {/* <Route path="/products" element={<ProductsPage />} /> */}
         <Route path="/inquiry" element={<CustomerInquiryPage />} />
       </Routes>
       <FooterComponent />  {/* Footer at the bottom of every page */}

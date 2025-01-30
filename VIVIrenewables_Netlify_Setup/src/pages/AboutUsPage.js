@@ -1,8 +1,10 @@
 // src/pages/AboutUsPage.js
 import React from 'react';
 import { Container, Row, Col, Button, Accordion } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import testimonialImg1 from '../assets/testimonial1.jpg'; // Sample image for customer testimonials
 // import testimonialImg2 from '../assets/testimonial2.jpg';
+import '../assets/CSS/AboutUs.css';
 
 const AboutUsPage = () => {
   return (
@@ -52,30 +54,31 @@ const AboutUsPage = () => {
       </Col>
     </Row>
 
-    {/* Testimonials Section */}
-    <Row className="my-5">
-      <Col md={12}>
-        <h3>What Our Customers Say</h3>
-        <Row>
-          {/* Testimonial 1 */}
-          <Col md={6} className="mb-4">
-            <div className="testimonial-box p-4 border rounded">
-              {/* <img src={testimonialImg1} alt="Customer 1" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
-              <h5 className="mt-3">Kishor Pande</h5>
-              <p><em>"The team at ViVi Renewables made the solar installation process incredibly easy and efficient. The savings on my electricity bills have been amazing!"</em></p>
-            </div>
-          </Col>
-          {/* Testimonial 2 */}
-          <Col md={6} className="mb-4">
-            <div className="testimonial-box p-4 border rounded">
-              {/* <img src={testimonialImg2} alt="Customer 2" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
-              <h5 className="mt-3">Sandesh Shelar</h5>
-              <p><em>"I am really impressed with the service and quality of work. The team was very professional, and the installation was completed on time."</em></p>
-            </div>
-          </Col>
-        </Row>
+   {/* Testimonials Section */}
+<Row className="my-5 testimonials">
+  <Col md={12}>
+    <h3>What Our Customers Say</h3>
+    <Row>
+      {/* Testimonial 1 */}
+      <Col md={6} className="mb-4">
+        <div className="testimonial-box p-4 border rounded">
+          {/* <img src={testimonialImg1} alt="Customer 1" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
+          <h5 className="mt-3">Kishor Pande</h5>
+          <p><em>"The team at ViVi Renewables made the solar installation process incredibly easy and efficient. The savings on my electricity bills have been amazing!"</em></p>
+        </div>
+      </Col>
+      {/* Testimonial 2 */}
+      <Col md={6} className="mb-4">
+        <div className="testimonial-box p-4 border rounded">
+          {/* <img src={testimonialImg2} alt="Customer 2" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
+          <h5 className="mt-3">Sandesh Shelar</h5>
+          <p><em>"I am really impressed with the service and quality of work. The team was very professional, and the installation was completed on time."</em></p>
+        </div>
       </Col>
     </Row>
+  </Col>
+</Row>
+
 
     {/* FAQ Section */}
     <Row className="my-5">
@@ -115,7 +118,7 @@ const AboutUsPage = () => {
       <Col md={12}>
         <h3>Ready to Make the Switch to Solar?</h3>
         <p>Contact us today to get a free consultation and explore how solar energy can benefit you.</p>
-        <Button href="/inquiry" variant="primary">Get in Touch</Button>
+        <Button as={Link} to="/inquiry" variant="primary">Get in Touch</Button>
       </Col>
     </Row>
   </Container>

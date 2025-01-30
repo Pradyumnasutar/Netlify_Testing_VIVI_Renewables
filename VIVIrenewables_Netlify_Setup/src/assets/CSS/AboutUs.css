@@ -1,0 +1,28 @@
+/* Testimonial Section */
+.testimonial-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+  }
+  
+  .row.testimonials {
+    display: flex;
+    align-items: stretch; /* Ensures all columns stretch to the same height */
+  }
+  
+  .testimonial-box p {
+    margin-top: auto; /* Pushes the testimonial quote to the bottom of the box */
+  }
+  
+  /* Optional: To improve spacing between the testimonial content */
+  .testimonial-box h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-box p {
+    font-style: italic;
+  }
+  

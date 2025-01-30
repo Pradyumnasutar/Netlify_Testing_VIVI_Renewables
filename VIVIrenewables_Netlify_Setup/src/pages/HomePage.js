@@ -1,13 +1,15 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa'; 
 import { Carousel, Container, Row, Col,Card } from 'react-bootstrap';
-import solar1 from '../assets/homesollar.jpg';
+import solar1 from '../assets/rooftopSolarjpg.jpg';
+
 import solar01 from '../assets/residentialsolar.jpg';
 import solar2 from '../assets/Gardensolar.jpg';
 import solar02 from '../assets/solarcleaning.jpg';
 import solar3 from '../assets/homeSolar.jpg';
+import solar03 from '../assets/gera-plaza.jpg';
 import CustomerInquiryForm from '../components/CustomerInquiryForm';
-import solarInstallationImg from '../assets/2manwithsolarplates.jpg'; // Update the path to your actual image
+import solarInstallationImg from '../assets/solar-panels-installed.jpg'; // Update the path to your actual image
 import maintenanceImg from '../assets/solarMaintenance.jpg'; // Update the path to your actual image
 import cleaningImg from '../assets/solar-panel-cleaning-service.jpg';
 import collectEnergyImg from '../assets/collectEnergy.png'; // Example image
@@ -35,49 +37,47 @@ const HomePage = () => {
             src={solar01}
             alt="First slide"
           />
-          <Carousel.Caption>
-            {/* <h3>First Slide</h3> */}
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={solar1}
-            alt="First slide"
+            alt="Second slide"
           />
-          <Carousel.Caption>
-            {/* <h3>First Slide</h3> */}
-          </Carousel.Caption>
+          
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={solar03}
+            alt="Third slide"
+          />
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={solar2}
-            alt="Second slide"
+            alt="Forth slide"
           />
-          <Carousel.Caption>
-            {/* <h3>Second Slide</h3> */}
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={solar02}
-            alt="Second slide"
+            alt="Fifth slide"
           />
-          <Carousel.Caption>
-            {/* <h3>Second Slide</h3> */}
-          </Carousel.Caption>
+          
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={solar3}
-            alt="Third slide"
+            alt="Sixth slide"
           />
-          <Carousel.Caption>
-            {/* <h3>Third Slide</h3> */}
-          </Carousel.Caption>
+         
         </Carousel.Item>
       </Carousel>
 

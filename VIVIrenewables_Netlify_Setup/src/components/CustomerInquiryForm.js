@@ -1,7 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Form, Button, Col, Row, Card } from 'react-bootstrap';
+import { Form, Button, Col, Row, Card ,Container} from 'react-bootstrap';
 import emailjs from 'emailjs-com'; // use emailjs-com package
+// import '../assets/CSS/CustomerInquiryForm.css';
 
 const CustomerInquiryForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -27,8 +28,17 @@ const CustomerInquiryForm = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center min-vh-100">
-      <Card className="shadow-lg p-4" style={{ width: '100%', maxWidth: '600px' }}>
+    <Container className="my-5">
+        <h2 className="text-center mb-4">Connect with Our Solar Advisor</h2>
+      {/* Wrapper for background image */}
+      <div className="background-wrapper">
+        {/* Overlay for opacity */}
+        
+        <div className="background-overlay"></div>
+
+        {/* The form content */}
+        <div className="d-flex justify-content-center align-items-center min-vh-100 form-content-wrapper">
+          <Card className="shadow-lg p-4" style={{ width: '100%', maxWidth: '600px' }}>
         <Form id="inquiryForm" onSubmit={handleSubmit(onSubmit)}>
           <Row className="mb-3">
             <Col md={12}>
@@ -126,6 +136,8 @@ const CustomerInquiryForm = () => {
         </Form>
       </Card>
     </div>
+    </div>
+    </Container>
   );
 };
 
