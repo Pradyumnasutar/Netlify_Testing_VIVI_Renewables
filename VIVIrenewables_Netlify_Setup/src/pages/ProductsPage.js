@@ -12,8 +12,9 @@ import '../assets/CSS/Products.css';
 const ProductsPage = () => {
   return (
     <Container className="my-5">
-      <h2 className="text-center mb-4">Our Products</h2>
-
+    <div className="ms-3">
+      <h1 className="text-center mb-4">Our Products</h1>
+</div>
       <Row>
         {/* Solar Plate Card */}
         <Col md={3} sm={6} className="mb-4">

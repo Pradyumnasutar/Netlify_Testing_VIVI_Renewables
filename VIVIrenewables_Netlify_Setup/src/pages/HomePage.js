@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { Carousel, Container, Row, Col,Card } from 'react-bootstrap';
 import solar1 from '../assets/3d-solar-panel-system.jpg';
 
-import solar01 from '../assets/commercial_solar.jpg';
+import solar01 from '../assets/rooftop-slider-9-1.jpg';
 import solar2 from '../assets/Gardensolar.jpg';
 import solar02 from '../assets/solarcleaning.jpg';
 import solar3 from '../assets/homeSolar.jpg';

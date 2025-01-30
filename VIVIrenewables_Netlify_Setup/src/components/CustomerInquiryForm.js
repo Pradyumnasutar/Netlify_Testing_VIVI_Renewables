@@ -16,12 +16,12 @@ const CustomerInquiryForm = () => {
         (result) => {
           console.log('SUCCESS!', result.text);
           alert('Your inquiry has been submitted successfully!');
-          window.location.reload();
+          window.location.href = '/'; 
         },
         (error) => {
           console.log('FAILED...', error.text);
           alert('There was an issue submitting your inquiry. Please try again.');
-          window.location.reload();
+          window.location.href = '/'; 
         }
       );
 
@@ -29,7 +29,7 @@ const CustomerInquiryForm = () => {
 
   return (
     <Container className="my-5">
-        <h2 className="text-center mb-4">Connect with Our Solar Advisor</h2>
+        <h1 className="text-center mb-4">Connect with Our Solar Advisor</h1>
       {/* Wrapper for background image */}
       <div className="background-wrapper">
         {/* Overlay for opacity */}
