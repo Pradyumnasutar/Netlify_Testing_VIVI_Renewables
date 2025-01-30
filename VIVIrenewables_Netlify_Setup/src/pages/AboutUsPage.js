@@ -11,8 +11,8 @@ const AboutUsPage = () => {
     <Container className="my-5">
     {/* Page Title */}
     <div className="ms-3">
-      <h1>About Us</h1>
-      <p>We are dedicated to providing high-quality rooftop solar installation services, helping homes and businesses embrace the power of renewable energy.</p>
+      <h1 className="text-center mb-4">About Us</h1>
+      <p className="text-center">We are dedicated to providing high-quality rooftop solar installation services, helping homes and businesses embrace the power of renewable energy.</p>
     </div>
 
     {/* Mission and Vision Section */}
