@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import madeinIndia from '../assets/IndiaFlag.png';
+
 const FooterComponent = () => {
   return (
     <footer className="bg-dark text-light py-5">
@@ -16,10 +17,10 @@ const FooterComponent = () => {
               Email: <a href="mailto:contact@vivirenewables.com" className="text-light">contact@vivirenewables.com</a>
             </p>
             <div>
-              <a href="https://facebook.com/SolarSquare" className="text-light mx-2">Facebook</a>
-              <a href="https://youtube.com/SolarSquare" className="text-light mx-2">YouTube</a>
-              <a href="https://instagram.com/SolarSquare" className="text-light mx-2">Instagram</a>
-              <a href="https://linkedin.com/SolarSquare" className="text-light mx-2">LinkedIn</a>
+              <a href="https://facebook.com/" className="text-light mx-2">Facebook</a>
+              <a href="https://youtube.com/" className="text-light mx-2">YouTube</a>
+              <a href="https://instagram.com/" className="text-light mx-2">Instagram</a>
+              <a href="https://linkedin.com/" className="text-light mx-2">LinkedIn</a>
             </div>
           </Col>
 
@@ -55,12 +56,6 @@ const FooterComponent = () => {
               <ListGroup.Item className="bg-dark text-light border-0 p-1">
                 <a href="/" className="text-light">Careers</a>
               </ListGroup.Item>
-              <ListGroup.Item className="bg-dark text-light border-0 p-1">
-                <a href="/" className="text-light">On-Grid Solar</a>
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-dark text-light border-0 p-1">
-                <a href="/" className="text-light">Off-Grid Solar</a>
-              </ListGroup.Item>
             </ListGroup>
           </Col>
 
@@ -72,18 +67,20 @@ const FooterComponent = () => {
             <p>Andheri West, Mumbai, Maharashtra 400058</p>
           </Col>
         </Row>
+        
         <hr className="text-light" />
+        
         <Row className="text-center">
-  <Col className="d-flex justify-content-start">
-  <p>
-      Proudly made in India{' '}
-      <img src={madeinIndia} alt="India Flag" style={{ width: '30px', verticalAlign: 'middle' }} />
-    </p>
-  </Col>
-  <Col className="d-flex justify-content-end">
-    <p>&copy;{new Date().getFullYear()} ViVi Renewables. All Rights Reserved.</p>
-  </Col>
-</Row>
+          <Col className="d-flex justify-content-start">
+            <p>
+              Proudly made in India{' '}
+              <img src={madeinIndia} alt="India Flag" style={{ width: '30px', verticalAlign: 'middle' }} />
+            </p>
+          </Col>
+          <Col className="d-flex justify-content-end">
+            <p>&copy;{new Date().getFullYear()} ViVi Renewables. All Rights Reserved.</p>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa'; 
 import { Carousel, Container, Row, Col,Card } from 'react-bootstrap';
 import solar1 from '../assets/homesollar.jpg';
 import solar01 from '../assets/residentialsolar.jpg';
@@ -16,6 +17,12 @@ import readyImg from '../assets/readyPower.png'; // Example image
 
 
 const HomePage = () => {
+
+  const whatsappNumber = '+917040010890';  // Replace with your WhatsApp number
+  const message = 'Hello, I am interested in your solar services!';  // Default message
+
+  // WhatsApp link
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   return (
     <div>
       
@@ -87,6 +94,8 @@ const HomePage = () => {
         </p>
       </Container>
 
+      
+
 {/* Our Services Section */}
 <Container className="my-5">
       <h2 className="text-center mb-4">Our Services</h2>
@@ -148,6 +157,33 @@ const HomePage = () => {
         
       </Row>
     </Container>
+
+{/* Floating WhatsApp Icon */}
+<a
+  href={whatsappLink} // Link to WhatsApp API with pre-filled message
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    backgroundColor: '#25D366',  // WhatsApp green color
+    borderRadius: '50%',
+    padding: '15px',
+    width: '60px',  // Set a fixed width
+    height: '60px',  // Set a fixed height
+    fontSize: '30px',
+    color: 'white',
+    display: 'flex',  // Use flexbox to center the icon
+    alignItems: 'center',  // Vertically center the icon
+    justifyContent: 'center',  // Horizontally center the icon
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+    zIndex: 9999
+  }}
+>
+  <FaWhatsapp />
+</a>
+
 
 {/* Solar Energy Works Section */}
     <Container className="my-5">
