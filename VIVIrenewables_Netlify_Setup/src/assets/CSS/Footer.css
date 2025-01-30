@@ -1,0 +1,20 @@
+/* Default Icon Size for larger screens */
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px; /* Default icon size */
+    transition: color 0.3s ease;
+  }
+  
+  /* On mobile devices, reduce the icon size */
+  @media (max-width: 768px) {
+    .social-icons a {
+      font-size: 24px; /* Adjust size for smaller screens */
+    }
+  }
+  
+  /* Hover effect */
+  .social-icons a:hover {
+    color: #007bff; /* Hover color */
+  }
+  

@@ -17,18 +17,22 @@ const AboutUsPage = () => {
 
     {/* Mission and Vision Section */}
     <Row className="my-5">
-      <Col md={6}>
+    <Col md={6} className="mb-4">
+    <div className="testimonial-box p-4 border rounded">
         <h3>Our Mission</h3>
         <p>
           Our mission is to make solar energy accessible to everyone by providing efficient, cost-effective, and sustainable rooftop solar solutions. We strive to empower individuals and businesses to harness the power of the sun while reducing their carbon footprint.
         </p>
-      </Col>
-      <Col md={6}>
+        </div>
+        </Col>
+        <Col md={6} className="mb-4">
+        <div className="testimonial-box p-4 border rounded">
         <h3>Our Vision</h3>
         <p>
           We envision a world where solar energy is the primary source of power, creating a cleaner, greener future for generations to come. Our commitment is to lead the way in solar innovation, driving positive change across India and beyond.
         </p>
-      </Col>
+        </div>
+        </Col>
     </Row>
 
     {/* Our Values Section */}

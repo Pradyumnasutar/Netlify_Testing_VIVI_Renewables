@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import '../assets/CSS/Footer.css';
 // import madeinIndia from '../assets/IndiaFlag.png';
 
 const FooterComponent = () => {
@@ -73,20 +74,21 @@ const FooterComponent = () => {
               <img src={madeinIndia} alt="India Flag" style={{ width: '30px', verticalAlign: 'middle' }} />
             </p> */}
 
-            <div>
-      <a href="https://facebook.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
-        <FaFacebook size={30} />
+            <div className="social-icons">
+      <a href="https://facebook.com/" className="mx-2" target="_blank" rel="noopener noreferrer">
+        <FaFacebook />
       </a>
-      <a href="https://youtube.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
-        <FaYoutube size={30} />
+      <a href="https://youtube.com/" className="mx-2" target="_blank" rel="noopener noreferrer">
+        <FaYoutube />
       </a>
-      <a href="https://instagram.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
-        <FaInstagram size={30} />
+      <a href="https://instagram.com/" className="mx-2" target="_blank" rel="noopener noreferrer">
+        <FaInstagram />
       </a>
-      <a href="https://linkedin.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin size={30} />
+      <a href="https://linkedin.com/" className="mx-2" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin />
       </a>
     </div>
+
           </Col>
           <Col className="d-flex justify-content-end">
             <p>&copy;{new Date().getFullYear()} ViVi Renewables. All Rights Reserved.</p>

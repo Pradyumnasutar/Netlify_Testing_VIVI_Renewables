@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa'; 
 import { Carousel, Container, Row, Col,Card } from 'react-bootstrap';
-import solar1 from '../assets/rooftopSolarjpg.jpg';
+import solar1 from '../assets/3d-solar-panel-system.jpg';
 
-import solar01 from '../assets/residentialsolar.jpg';
+import solar01 from '../assets/commercial_solar.jpg';
 import solar2 from '../assets/Gardensolar.jpg';
 import solar02 from '../assets/solarcleaning.jpg';
 import solar3 from '../assets/homeSolar.jpg';
@@ -34,7 +34,7 @@ const HomePage = () => {
       <Carousel.Item>
           <img
             className="d-block w-100"
-            src={solar01}
+            src={solar1}
             alt="First slide"
           />
           
@@ -42,7 +42,7 @@ const HomePage = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={solar1}
+            src={solar01}
             alt="Second slide"
           />
           

@@ -1,0 +1,34 @@
+/* Products.css */
+
+/* Style for the product cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Ensuring images have the same height across all cards */
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Adjust height as per your preference */
+  }
+  
+  /* Button positioning to stick at the bottom */
+  .card .btn {
+    margin-top: auto;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 767px) {
+    .card-img-top {
+      height: 180px; /* Slightly reduce image height for small screens */
+    }
+  }
+  
