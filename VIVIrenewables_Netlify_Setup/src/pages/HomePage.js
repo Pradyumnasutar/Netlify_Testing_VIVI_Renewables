@@ -253,7 +253,7 @@ const HomePage = () => {
 
       {/* Customer Inquiry Form Section */}
       <Container className="my-5">
-        <h2 className="text-center mb-4">Connect with Our Solar Advisor</h2>
+        {/* <h2 className="text-center mb-4">Connect with Our Solar Advisor</h2> */}
         <CustomerInquiryForm />
       </Container>
     </div>

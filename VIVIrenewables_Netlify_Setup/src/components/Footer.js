@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
-import madeinIndia from '../assets/IndiaFlag.png';
+import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+// import madeinIndia from '../assets/IndiaFlag.png';
 
 const FooterComponent = () => {
   return (
@@ -16,12 +17,7 @@ const FooterComponent = () => {
               Phone: <a href="tel:+919830003000" className="text-light">98 3000 3000</a><br />
               Email: <a href="mailto:contact@vivirenewables.com" className="text-light">contact@vivirenewables.com</a>
             </p>
-            <div>
-              <a href="https://facebook.com/" className="text-light mx-2">Facebook</a>
-              <a href="https://youtube.com/" className="text-light mx-2">YouTube</a>
-              <a href="https://instagram.com/" className="text-light mx-2">Instagram</a>
-              <a href="https://linkedin.com/" className="text-light mx-2">LinkedIn</a>
-            </div>
+            
           </Col>
 
           {/* Middle Side: Solutions */}
@@ -72,10 +68,25 @@ const FooterComponent = () => {
         
         <Row className="text-center">
           <Col className="d-flex justify-content-start">
-            <p>
+            {/* <p>
               Proudly made in India{' '}
               <img src={madeinIndia} alt="India Flag" style={{ width: '30px', verticalAlign: 'middle' }} />
-            </p>
+            </p> */}
+
+            <div>
+      <a href="https://facebook.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
+        <FaFacebook size={30} />
+      </a>
+      <a href="https://youtube.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
+        <FaYoutube size={30} />
+      </a>
+      <a href="https://instagram.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
+        <FaInstagram size={30} />
+      </a>
+      <a href="https://linkedin.com/" className="text-light mx-2" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin size={30} />
+      </a>
+    </div>
           </Col>
           <Col className="d-flex justify-content-end">
             <p>&copy;{new Date().getFullYear()} ViVi Renewables. All Rights Reserved.</p>
