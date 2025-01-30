@@ -14,6 +14,7 @@ const NavbarComponent = () => {
       <Navbar.Collapse id="navbar-nav">
         {/* Align the links to the right using ms-auto and add margin to the left of each Nav.Link */}
         <Nav className="ms-auto">
+        <Nav.Link as={Link} to="/" className="ms-3">Home</Nav.Link>
           <Nav.Link as={Link} to="/about" className="ms-3">About Us</Nav.Link>
           <Nav.Link as={Link} to="/services" className="ms-3">Services</Nav.Link>
           <Nav.Link as={Link} to="/products" className="ms-3">Products</Nav.Link>
