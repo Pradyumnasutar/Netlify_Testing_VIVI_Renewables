@@ -62,9 +62,9 @@ const FooterComponent = () => {
           {/* Address Section */}
           <Col md={4} className="mb-4">
             <h5>Address</h5>
-            <p>1st floor, Standford Building, S.V. Road & Juhu Lane Junction,</p>
-            <p>Above Mahindra Showroom, Zalawad Nagar, Ganga Vihar,</p>
-            <p>Andheri West, Mumbai, Maharashtra 400058</p>
+            <p>Yugandhar Appartment,</p>
+            <p>Pathare wasti,</p>
+            <p>Lohegaon, Pune, Maharashtra 400058</p>
           </Col>
         </Row>
         
