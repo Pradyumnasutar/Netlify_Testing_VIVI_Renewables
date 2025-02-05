@@ -312,7 +312,7 @@ const CustomerInquiryForm = () => {
                     className="mb-3"
                     type="checkbox"
                     label="I agree to ViVi Renewables terms of service & privacy policy"
-                    required
+                    required checked
                   />
                   <Button variant="primary" type="submit" className="w-100">
                     Submit Inquiry

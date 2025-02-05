@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import logo from '../assets/vivirenewablesLogo.jpg';
-import '../assets/CSS/Navbar.css';
+// import logo from '../assets/vivirenewablesLogo.jpg';
+import logo from '../assets/logos/vivilogo.jpeg';
+// import '../assets/CSS/Navbar.css';
 const NavbarComponent = () => {
   return (
     <Navbar bg="light" expand="lg">
