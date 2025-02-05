@@ -1,0 +1,31 @@
+
+.border-box {
+    border: 1px solid grey; /* Add border around the entire div */
+    border-radius: 10px; /* Optional: rounded corners for the border */
+    padding: 10px; /* Optional: padding inside the div */
+    background-color: #f8f9fa; /* Optional: background color for the div */
+  }
+
+.category-btns {
+    
+    background-color:#f8f9fa !important;
+    color: #000 !important;
+    border: none !important;
+    width: 100%;
+    padding: 10px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease !important;
+    white-space: nowrap;
+  }
+  
+  .category-btns:hover {
+    background-color: #d6d6d6 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .category-btns {
+        font-size: 14px !important;
+        padding: 8px !important;
+    }
+}

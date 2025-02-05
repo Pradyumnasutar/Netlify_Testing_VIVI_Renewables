@@ -20,8 +20,8 @@ const FooterComponent = () => {
               <strong>Contact Us:</strong>
               <br />
               Phone:{" "}
-              <a href="tel:+917040010890" className="text-light">
-                70 4001 0890
+              <a href="tel:+919226961194" className="text-light">
+                92 2696 1194
               </a>
               <br />
               Email:{" "}
@@ -82,7 +82,7 @@ const FooterComponent = () => {
             <h5>Address</h5>
             <p>Yugandhar Appartment,</p>
             <p>Pathare wasti,</p>
-            <p>Lohegaon, Pune, Maharashtra 400058</p>
+            <p>Lohegaon, Pune, Maharashtra 411047</p>
           </Col>
         </Row>
 
