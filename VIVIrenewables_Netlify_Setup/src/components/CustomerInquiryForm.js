@@ -14,7 +14,8 @@ const CustomerInquiryForm = () => {
   const [countryCode, setCountryCode] = useState("+91");
   const [selectedBill, setSelectedBill] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(""); // State for selected category
-
+  const [isChecked, setIsChecked] = useState(false);
+  
   const handleCountryCodeChange = (e) => {
     setCountryCode(e.target.value);
   };
@@ -262,7 +263,7 @@ const CustomerInquiryForm = () => {
                   {/* Commercial */}
                   {selectedCategory === "Commercial" && (
                     <>
-                    <Row className="mb-3">
+                      <Row className="mb-3">
                         <Col md={12}>
                           <Form.Group controlId="companyName">
                             <Form.Label>
@@ -283,7 +284,6 @@ const CustomerInquiryForm = () => {
                           </Form.Group>
                         </Col>
                       </Row>
-                      
 
                       {/* <Row className="mb-3">
                         <Col md={12}>
@@ -312,7 +312,9 @@ const CustomerInquiryForm = () => {
                     className="mb-3"
                     type="checkbox"
                     label="I agree to ViVi Renewables terms of service & privacy policy"
-                    required checked
+                    checked={isChecked}
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                    required
                   />
                   <Button variant="primary" type="submit" className="w-100">
                     Submit Inquiry
