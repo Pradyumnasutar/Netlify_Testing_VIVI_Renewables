@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 // import logo from '../assets/vivirenewablesLogo.jpg';
-import logo from '../assets/logos/vivilogo.jpeg';
+import logo from '../assets/logos/vivirenewableslogo.png';
 // import '../assets/CSS/Navbar.css';
 const NavbarComponent = () => {
   return (
