@@ -4,7 +4,7 @@ import { Carousel, Container, Row, Col,Card } from 'react-bootstrap';
 import solar1 from '../assets/3d-solar-panel-system.jpg';
 
 import solar01 from '../assets/rooftop-slider-9-1.jpg';
-import solar2 from '../assets/Gardensolar.jpg';
+import solar2 from '../assets/commercial_solar.jpg';
 import solar02 from '../assets/solarcleaning.jpg';
 import solar3 from '../assets/homeSolar.jpg';
 import solar03 from '../assets/gera-plaza.jpg';
@@ -252,7 +252,7 @@ const HomePage = () => {
     </Container>
 
       {/* Customer Inquiry Form Section */}
-      <Container className="my-5">
+      <Container className="my-0">
         {/* <h2 className="text-center mb-4">Connect with Our Solar Advisor</h2> */}
         <CustomerInquiryForm />
       </Container>

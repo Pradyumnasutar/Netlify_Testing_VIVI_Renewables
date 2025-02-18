@@ -25,7 +25,7 @@
   
   @media (max-width: 768px) {
     .category-btns {
-        font-size: 14px !important;
+        font-size: 12px !important;
         padding: 8px !important;
     }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-// import logo from '../assets/vivirenewablesLogo.jpg';
-import logo from '../assets/logos/logo-png.png';
+import logo from '../assets/vivirenewablesLogo.jpg';
+//import logo from '../assets/logos/logo-transparent-png.png';
 // import '../assets/CSS/Navbar.css';
 const NavbarComponent = () => {
   return (

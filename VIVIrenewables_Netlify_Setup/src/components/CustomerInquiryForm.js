@@ -13,9 +13,9 @@ const CustomerInquiryForm = () => {
   } = useForm();
   const [countryCode, setCountryCode] = useState("+91");
   const [selectedBill, setSelectedBill] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(""); // State for selected category
-  const [isChecked, setIsChecked] = useState(false);
-  
+  const [selectedCategory, setSelectedCategory] = useState("Residential"); // State for selected category
+  const [isChecked, setIsChecked] = useState(true);
+
   const handleCountryCodeChange = (e) => {
     setCountryCode(e.target.value);
   };
@@ -190,6 +190,8 @@ const CustomerInquiryForm = () => {
                     </Col>
                   </Row>
                   {/* average monthly bill  */}
+                  {selectedCategory === "Residential" && (
+                    <>
                   <Row className="mb-3">
                     <Col md={12}>
                       <Form.Group controlId="monthlyBill">
@@ -236,29 +238,85 @@ const CustomerInquiryForm = () => {
                       </Form.Group>
                     </Col>
                   </Row>
+                  </>
+                )}
                   {/* Housing Society */}
                   {selectedCategory === "Housing Society" && (
+                    <>
+                    <Row className="mb-3">
+                    <Col md={12}>
+                      <Form.Group controlId="monthlyBill">
+                        <Form.Label>
+                          Monthly Electricity Bill{" "}
+                          <span style={{ color: "red" }}>*</span>
+                        </Form.Label>
+                        <div className="d-flex flex-wrap gap-2">
+                          {[
+                            "0-50000",
+                            "50000-1 lakh",
+                            "1 lakh-2 lakh",
+                            ">200000",
+                          ].map((range) => (
+                            <Button
+                              key={range}
+                              variant={
+                                selectedBill === range ? "dark" : "light"
+                              }
+                              className="border-dark"
+                              onClick={() => handleBillSelection(range)}
+                            >
+                              {range === "<50000"
+                                ? "0 - ₹50000"
+                                : range === ">200000"
+                                ? "More than ₹2 lakh"
+                                : `₹${range.replace("-", " - ₹")}`}
+                            </Button>
+                          ))}
+                        </div>
+                        <input
+                          type="hidden"
+                          {...register("monthlyBill", {
+                            required: "Please select a bill range",
+                          })}
+                          value={selectedBill}
+                        />
+                        {errors.monthlyBill && (
+                          <div className="text-danger">
+                            {errors.monthlyBill.message}
+                          </div>
+                        )}
+                      </Form.Group>
+                    </Col>
+                  </Row>
+
                     <Row className="mb-3">
                       <Col md={12}>
                         <Form.Group controlId="numberOfUnits">
                           <Form.Label>
-                            Number of Units{" "}
+                            What is your designation in Housing Society{" "}
                             <span style={{ color: "red" }}>*</span>
                           </Form.Label>
                           <Form.Control
-                            type="number"
+                            as="select"
                             {...register("numberOfUnits", {
                               required: "Number of units is required",
                             })}
                             isInvalid={!!errors.numberOfUnits}
                             placeholder="Enter number of units"
-                          />
+                          >
+                          <option value="">Select Value </option>
+                          <option value="Management commitee member">Management commitee member</option>
+                            <option value="Resident">Resident</option>
+                            <option value="Builder">Builder</option>
+                            <option value="Facility Manager">Facility Manager</option>
+                            </Form.Control>
                           <Form.Control.Feedback type="invalid">
                             Number of units is required
                           </Form.Control.Feedback>
                         </Form.Group>
                       </Col>
                     </Row>
+                    </>
                   )}
                   {/* Commercial */}
                   {selectedCategory === "Commercial" && (
@@ -285,26 +343,26 @@ const CustomerInquiryForm = () => {
                         </Col>
                       </Row>
 
-                      {/* <Row className="mb-3">
+                       <Row className="mb-3">
                         <Col md={12}>
-                          <Form.Group controlId="pincode">
+                          <Form.Group controlId="monthlyBill">
                             <Form.Label>
-                              Pincode <span style={{ color: "red" }}>*</span>
+                              Average Monthly Bill <span style={{ color: "red" }}>*</span>
                             </Form.Label>
                             <Form.Control
                               type="number"
-                              {...register("pincode", {
-                                required: "Pincode is required",
+                              {...register("monthlyBill", {
+                                required: "Monthly Bill is required",
                               })}
                               isInvalid={!!errors.pincode}
-                              placeholder="Enter your pincode"
+                              placeholder="Enter your Average Monthly Bill"
                             />
                             <Form.Control.Feedback type="invalid">
-                              Pincode is required
+                            Monthly Bill is required
                             </Form.Control.Feedback>
                           </Form.Group>
                         </Col>
-                      </Row> */}
+                      </Row>
                     </>
                   )}
 
