@@ -1,7 +1,7 @@
 // src/pages/AboutUsPage.js
 import React from 'react';
-import { Container, Row, Col, Button, Accordion } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
+//import { Link } from 'react-router-dom';
 // import testimonialImg1 from '../assets/testimonial1.jpg'; // Sample image for customer testimonials
 // import testimonialImg2 from '../assets/testimonial2.jpg';
 import '../assets/CSS/AboutUs.css';
@@ -122,7 +122,8 @@ const AboutUsPage = () => {
       <Col md={12}>
         <h3>Ready to Make the Switch to Solar?</h3>
         <p>Contact us today to get a free consultation and explore how solar energy can benefit you.</p>
-        <Button as={Link} to="/inquiry" variant="primary">Get in Touch</Button>
+        {/* <Button as={Link} to="/inquiry" variant="primary">Get in Touch</Button> */}
+        <a href="mailto:contact@vivirenewables.com" className="btn btn-primary">Get in Touch</a>
       </Col>
     </Row>
   </Container>

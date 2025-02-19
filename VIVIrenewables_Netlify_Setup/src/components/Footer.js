@@ -10,7 +10,7 @@ const FooterComponent = () => {
       <Container>
         <Row>
           {/* Left Side: Logo, Contact Info, and Social Media */}
-          <Col md={4} className="mb-4 mr-3">
+          <Col md={4} className="mb-4">
             <h4>ViVi Renewables</h4>
             <p>
               Rooftop solar made simple. We don't just sell solar — we give you
@@ -35,7 +35,7 @@ const FooterComponent = () => {
           </Col>
 
           {/* Middle Side: Solutions */}
-          <Col md={2} className="mb-4 mr-3">
+          <Col md={4} className="mb-4 ps-5">
             <h5>Our Solutions</h5>
             <ListGroup>
               <ListGroup.Item className="bg-dark text-light border-0 p-1">
@@ -51,7 +51,7 @@ const FooterComponent = () => {
           </Col>
 
           {/* Right Side: Quick Links */}
-          <Col md={2} className="mb-4 mr-5">
+          {/* <Col md={2} className="mb-4 mr-5">
             <h5>Quick Links</h5>
             <ListGroup>
               <ListGroup.Item className="bg-dark text-light border-0 p-1">
@@ -75,10 +75,10 @@ const FooterComponent = () => {
                 </a>
               </ListGroup.Item>
             </ListGroup>
-          </Col>
+          </Col> */}
 
           {/* Address Section */}
-          <Col md={4} className="mb-4">
+          <Col md={4} className="mb-4 ps-">
             <h5>Address</h5>
             <p>Yugandhar Appartment,</p>
             <p>Pathare wasti,</p>

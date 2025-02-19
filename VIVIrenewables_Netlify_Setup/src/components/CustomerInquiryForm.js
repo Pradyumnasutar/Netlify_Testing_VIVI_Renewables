@@ -68,12 +68,12 @@ const CustomerInquiryForm = () => {
         style={{ width: "100%", maxWidth: "600px" }}
       >
         <div className="background-wrapper" style={{ width: "100%" }}>
-          <h3 className="d-flex justify-content-center align-items-center mb-">
+          <h3 className="d-flex justify-content-center align-items-center mb-2">
             Connect with Our Solar Advisor
           </h3>
-          <div className="d-flex justify-content-center align-items-center border-box mb-2">
+          <div className="justify-content-center align-items-center border-box mb-2">
             <Row className="mb-0">
-              <Col className="d-flex justify-content-center me-0">
+              <Col md={4} className="d-flex justify-content-center me-0">
                 <Button
                   className="category-btns"
                   onClick={() => handleCategoryChange("Residential")}
@@ -81,7 +81,7 @@ const CustomerInquiryForm = () => {
                   Residential
                 </Button>
               </Col>
-              <Col className="d-flex justify-content-center me-0">
+              <Col md={4} className="d-flex justify-content-center me-0">
                 <Button
                   className="category-btns"
                   onClick={() => handleCategoryChange("Housing Society")}
@@ -89,7 +89,7 @@ const CustomerInquiryForm = () => {
                   Housing Society
                 </Button>
               </Col>
-              <Col className="d-flex justify-content-center">
+              <Col md={4} className="d-flex justify-content-center">
                 <Button
                   className="category-btns"
                   onClick={() => handleCategoryChange("Commercial")}
