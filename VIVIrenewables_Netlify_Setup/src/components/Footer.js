@@ -1,8 +1,12 @@
 import React from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
+// import { PiPhoneCallLight } from "react-icons/pi";
 import "../assets/CSS/Footer.css";
 import madeinIndia from "../assets/IndiaFlag.png";
+import Phone from "../assets/logos/phone.png";
+import Email from "../assets/logos/email.png";
+import Location from "../assets/logos/location1.png";
 
 const FooterComponent = () => {
   return (
@@ -17,8 +21,8 @@ const FooterComponent = () => {
             </div>
 
             <p>
-              Rooftop solar made simple. We don't just sell solar — we give you
-              peace of mind.
+              Vivi Renewables is a Professional consultancy firm engaged in
+              business of Renewable Power & Electrical Infra Projects.
             </p>
           </Col>
 
@@ -67,30 +71,80 @@ const FooterComponent = () => {
 
           {/* Address Section */}
           <Col md={4} className="mb-4 ps-">
-            <h5>Address</h5>
-            <p>
-              Yugandhar Appartment,
-              <br />
-              Pathare wasti,
-              <br />
-              Lohegaon, Pune, Maharashtra 411047
-            </p>
-
-            <p>
-              
-              Phone:{" "}
-              <a href="tel:+919226961194" className="text-light">
-                92 2696 1194
-              </a>
-              <br />
-              Email:{" "}
-              <a
-                href="mailto:contact@vivirenewables.com"
-                className="text-light"
+            <div>
+              <h5>Contact</h5>
+              <ul
+                className="p-0"
+                style={{ listStyle: "none", textAlign: "", padding: 0 }}
               >
-                contact@vivirenewables.com
-              </a>
-            </p>
+                {/* Location */}
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "",
+                    justifyContent: "",
+                    marginBottom: "8px",
+                  }}
+                >
+                  <img
+                    src={Location}
+                    alt="Location Icon"
+                    style={{ width: "6%", height: "2rem", marginRight: "6px" }}
+                  />
+                  <p style={{ margin: 0 }}>
+                    Yugandhar Appartment, <br />
+                    Pathare Wasti, <br />
+                    Lohegaon, Pune, Maharashtra 411047
+                  </p>
+                </li>
+
+                {/* Phone */}
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "",
+                    marginBottom: "8px",
+                  }}
+                >
+                  <img
+                    src={Phone}
+                    alt="Phone Icon"
+                    style={{ width: "6%", height: "auto", marginRight: "6px" }}
+                  />
+                  <p style={{ margin: 0 }}>
+                    Phone:{" "}
+                    <a href="tel:+919226961194" className="text-light">
+                      92 2696 1194
+                    </a>
+                  </p>
+                </li>
+
+                {/* Email */}
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "",
+                  }}
+                >
+                  <img
+                    src={Email}
+                    alt="Email Icon"
+                    style={{ width: "6%", height: "auto", marginRight: "6px" }}
+                  />
+                  <p style={{ margin: 0 }}>
+                    Email:{" "}
+                    <a
+                      href="mailto:contact@vivirenewables.com"
+                      className="text-light"
+                    >
+                      contact@vivirenewables.com
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
           </Col>
         </Row>
 

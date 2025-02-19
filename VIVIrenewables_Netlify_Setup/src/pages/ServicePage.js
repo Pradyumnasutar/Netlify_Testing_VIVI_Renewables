@@ -1,15 +1,18 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import solarInstallationImg from '../assets/solar-panels-installed.jpg'; // Replace with actual image paths
-import solarCleaningImg from '../assets/solarcleaning.jpg'; // Replace with actual image paths
-import solarMaintenanceImg from '../assets/solarMaintenance.jpg'; // Replace with actual image paths
-
+// import solarInstallationImg from '../assets/solar-panels-installed.jpg'; // Replace with actual image paths
+// import solarCleaningImg from '../assets/solarcleaning.jpg'; // Replace with actual image paths
+// import solarMaintenanceImg from '../assets/solarMaintenance.jpg'; // Replace with actual image paths
+import solarInstallationImg from "../assets/images/engineer.jpg"; // Update the path to your actual image
+import maintenanceImg from "../assets/images/rooftopAidesign.webp"; // Update the path to your actual image
+import transmitionImg from "../assets/images/transmitionline2.jpg";
+import cleaningImg from "../assets/images/solar-panels.jpg";
 const ServicePage = () => {
   return (
     <div>
       {/* Header Section */}
       <Container className="my-5">
-        <h1 className="text-center mb-4">Our Services</h1>
+        <h1 className="text-center mb-4">OUR SERVICES</h1>
         <p className="text-center">
           At ViVi Renewables, we offer top-notch rooftop solar panel solutions to help you harness clean and sustainable energy. 
           Explore our range of services that bring efficiency and reliability to your solar energy needs.
@@ -18,8 +21,8 @@ const ServicePage = () => {
 
       {/* Services Section */}
       <Container>
-        <Row>
-          {/* Solar Installation Card */}
+        {/* <Row>
+          
           <Col md={4} className="mb-4">
             <Card className="text-center h-100">
               <Card.Img 
@@ -37,7 +40,7 @@ const ServicePage = () => {
             </Card>
           </Col>
 
-          {/* Solar Cleaning Card */}
+          
           <Col md={4} className="mb-4">
             <Card className="text-center h-100">
               <Card.Img 
@@ -55,7 +58,7 @@ const ServicePage = () => {
             </Card>
           </Col>
 
-          {/* Solar Maintenance Card */}
+          
           <Col md={4} className="mb-4">
             <Card className="text-center h-100">
               <Card.Img 
@@ -68,6 +71,94 @@ const ServicePage = () => {
                 <Card.Title>Solar Panel Maintenance</Card.Title>
                 <Card.Text>
                   Our experts provide maintenance services to ensure that your solar panels continue to operate at peak efficiency.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row> */}
+
+        <Row>
+          {/* Solar Installation Card */}
+          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+            <Card className="text-center h-100 card-hover">
+              <Card.Img
+                variant="top"
+                src={solarInstallationImg}
+                alt="Solar Installation"
+                className="card-img-fixed"
+              />
+              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+                <Card.Title className="card-title mt-2">
+                  Open Power Access Service
+                </Card.Title>
+                <Card.Text className="card-text">
+                  Under the Open Power Access Services, we offer a comprehensive
+                  range of services to all HT consumers for arranging cheaper
+                  power under Intra/Interstate.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          {/* Cleaning Card */}
+
+          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+            <Card className="text-center h-100 card-hover">
+              <Card.Img
+                variant="top"
+                src={transmitionImg}
+                alt="Solar Installation"
+                className="card-img-fixed"
+              />
+              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+                <Card.Title className="card-title mt-2">
+                  Electrical Infrastructure Services (EIS)
+                </Card.Title>
+                <Card.Text className="card-text">
+                  We provide top-notch electrical infrastructure solutions,
+                  ensuring safe and efficient energy distribution for your
+                  needs.{" "}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* Maintenance & Repair Card */}
+
+          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+            <Card className="text-center h-100 card-hover">
+              <Card.Img
+                variant="top"
+                src={maintenanceImg}
+                alt="Solar Installation"
+                className="card-img-fixed"
+              />
+              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+                <Card.Title className="card-title mt-2">
+                  Solar Rooftop PV Power Projects
+                </Card.Title>
+                <Card.Text className="card-text">
+                  We specialize in designing and implementing high-efficiency
+                  solar rooftop PV power projects for sustainable energy
+                  solutions.{" "}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+            <Card className="text-center h-100 card-hover">
+              <Card.Img
+                variant="top"
+                src={cleaningImg}
+                alt="Solar Installation"
+                className="card-img-fixed"
+              />
+              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+                <Card.Title className="card-title mt-2">
+                  Operation & Maintenance
+                </Card.Title>
+                <Card.Text className="card-text">
+                Our team offers expert maintenance and repair services to ensure your solar panels are always functioning at their best.{" "}
                 </Card.Text>
               </Card.Body>
             </Card>
