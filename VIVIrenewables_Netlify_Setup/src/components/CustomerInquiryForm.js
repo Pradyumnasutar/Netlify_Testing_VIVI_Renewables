@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Form, Button, Col, Row, Card, Container } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import "../assets/CSS/CategaryBtn.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CustomerInquiryForm = () => {
   const {
@@ -68,8 +69,8 @@ const CustomerInquiryForm = () => {
         style={{ width: "100%", maxWidth: "600px" }}
       >
         <div className="background-wrapper" style={{ width: "100%" }}>
-          <h3 className="d-flex justify-content-center align-items-center mb-2">
-            Connect with Our Solar Advisor
+          <h3 className="d-flex justify-content-center align-items-center mb-2 custformhead">
+            CONTACT US
           </h3>
           <div className="justify-content-center align-items-center border-box mb-2">
             <Row className="mb-0">
@@ -100,7 +101,7 @@ const CustomerInquiryForm = () => {
             </Row>
           </div>
 
-          <div className="d-flex justify-content-center align-items-center form-content-wrapper">
+          <div className="justify-content-center align-items-center form-content-wrapper">
             <div className="form-wrapper">
               <Card className="shadow-lg p-4">
                 <Form id="inquiryForm" onSubmit={handleSubmit(onSubmit)}>

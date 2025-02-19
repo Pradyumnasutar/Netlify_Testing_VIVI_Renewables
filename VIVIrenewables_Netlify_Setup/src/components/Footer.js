@@ -6,45 +6,33 @@ import madeinIndia from "../assets/IndiaFlag.png";
 
 const FooterComponent = () => {
   return (
-    <footer className="bg-dark text-light py-5">
+    <footer className="footercontainer">
       <Container>
         <Row>
           {/* Left Side: Logo, Contact Info, and Social Media */}
           <Col md={4} className="mb-4">
-            <h4>ViVi Renewables</h4>
+            <div className="container footerhead">
+              <h3 className="vivi-center">ViVi</h3>
+              <h3>Renewables</h3>
+            </div>
+
             <p>
               Rooftop solar made simple. We don't just sell solar — we give you
               peace of mind.
             </p>
-            <p>
-              <strong>Contact Us:</strong>
-              <br />
-              Phone:{" "}
-              <a href="tel:+919226961194" className="text-light">
-                92 2696 1194
-              </a>
-              <br />
-              Email:{" "}
-              <a
-                href="mailto:contact@vivirenewables.com"
-                className="text-light"
-              >
-                contact@vivirenewables.com
-              </a>
-            </p>
           </Col>
 
           {/* Middle Side: Solutions */}
-          <Col md={4} className="mb-4 ps-5">
+          <Col md={4} className="mb-4">
             <h5>Our Solutions</h5>
             <ListGroup>
-              <ListGroup.Item className="bg-dark text-light border-0 p-1">
+              <ListGroup.Item className="border-0 p-1 listgroupitem">
                 Homes
               </ListGroup.Item>
-              <ListGroup.Item className="bg-dark text-light border-0 p-1">
+              <ListGroup.Item className="border-0 p-1 listgroupitem">
                 Commercial
               </ListGroup.Item>
-              <ListGroup.Item className="bg-dark text-light border-0 p-1">
+              <ListGroup.Item className="border-0 p-1 listgroupitem">
                 Housing Society
               </ListGroup.Item>
             </ListGroup>
@@ -80,9 +68,29 @@ const FooterComponent = () => {
           {/* Address Section */}
           <Col md={4} className="mb-4 ps-">
             <h5>Address</h5>
-            <p>Yugandhar Appartment,</p>
-            <p>Pathare wasti,</p>
-            <p>Lohegaon, Pune, Maharashtra 411047</p>
+            <p>
+              Yugandhar Appartment,
+              <br />
+              Pathare wasti,
+              <br />
+              Lohegaon, Pune, Maharashtra 411047
+            </p>
+
+            <p>
+              
+              Phone:{" "}
+              <a href="tel:+919226961194" className="text-light">
+                92 2696 1194
+              </a>
+              <br />
+              Email:{" "}
+              <a
+                href="mailto:contact@vivirenewables.com"
+                className="text-light"
+              >
+                contact@vivirenewables.com
+              </a>
+            </p>
           </Col>
         </Row>
 

@@ -18,3 +18,21 @@
     color: #007bff; /* Hover color */
   }
   
+  .vivi-center {
+    display: block;
+    text-align: justify;
+    width: 100%;
+}
+.footerhead{
+  color: white;
+  font-family: 'HandelGothicBold', sans-serif;
+}
+.footercontainer {
+  background-color: black; /* Bootstrap dark */
+  color: lightgray; /* Bootstrap light text */
+  padding: 3rem 0; /* Equivalent to py-5 */
+}
+.listgroupitem {
+  background-color: black; /* Bootstrap dark */
+  color: lightgray; /* Bootstrap light text */
+}

@@ -22,6 +22,10 @@
   .category-btns:hover {
     background-color: #d6d6d6 !important;
   }
+  .custformhead{
+    color: black;
+    text-decoration: underline;
+  }
   
   @media (max-width: 768px) {
     .category-btns {

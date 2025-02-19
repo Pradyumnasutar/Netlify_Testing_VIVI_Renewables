@@ -16,7 +16,7 @@ import collectEnergyImg from '../assets/collectEnergy.png'; // Example image
 import convertPowerImg from '../assets/convertPower.png'; // Example image
 import transmitPowerImg from '../assets/transmitPower.png'; // Example image
 import readyImg from '../assets/readyPower.png'; // Example image
-
+import '../assets/CSS/Home.css';
 
 const HomePage = () => {
 
@@ -98,7 +98,7 @@ const HomePage = () => {
 
 {/* Our Services Section */}
 <Container className="my-5">
-      <h2 className="text-center mb-4">Our Services</h2>
+      <h2 className="text-center mb-4 ourservicehead">OUR SERVICES</h2>
       <Row>
         {/* Solar Installation Card */}
         <Col md={4} className="mb-4">
