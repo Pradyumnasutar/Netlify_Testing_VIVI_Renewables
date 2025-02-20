@@ -14,12 +14,12 @@ const ProductsPage = () => {
   return (
     <Container className="my-5">
       <div className="ms-3">
-        <h1 className="text-center mb-4">Our Products</h1>
+        <h1 className="text-center mb-4 ourservicehead">OUR PRODUCTS</h1>
       </div>
       <Row>
         {/* Solar Plate Card */}
-        <Col md={3} sm={6} className="mb-4">
-          <Card className="shadow-sm">
+        <Col md={4} sm={6} className="mb-4 d-flex justify-content-center">
+          <Card className="shadow-sm card-hover">
             <Card.Img variant="top" src={solarPlateImage} alt="Solar Plate" />
             <Card.Body className="text-center">
               <FaSolarPanel
@@ -38,8 +38,8 @@ const ProductsPage = () => {
         </Col>
 
         {/* Water Heating Solar Card */}
-        <Col md={3} sm={6} className="mb-4">
-          <Card className="shadow-sm">
+        <Col md={4} sm={6} className="mb-4 d-flex justify-content-center">
+          <Card className="shadow-sm card-hover">
             <Card.Img
               variant="top"
               src={waterHeatingImage}
@@ -62,8 +62,8 @@ const ProductsPage = () => {
         </Col>
 
         {/* Street and Outdoor Light Card */}
-        <Col md={3} sm={6} className="mb-4">
-          <Card className="shadow-sm">
+        <Col md={4} sm={6} className="mb-4 d-flex justify-content-center">
+          <Card className="shadow-sm card-hover">
             <Card.Img
               variant="top"
               src={streetLightImage}
@@ -86,8 +86,8 @@ const ProductsPage = () => {
         </Col>
 
         {/* Solar Inverters Card */}
-        <Col md={3} sm={6} className="mb-4">
-          <Card className="shadow-sm">
+        <Col md={4} sm={6} className="mb-4 d-flex justify-content-center">
+          <Card className="shadow-sm card-hover">
             <Card.Img
               variant="top"
               src={solarInverterImage}
@@ -110,8 +110,8 @@ const ProductsPage = () => {
         </Col>
 
         {/* Solar Pump Card */}
-        <Col md={3} sm={6} className="mb-4">
-          <Card className="shadow-sm">
+        <Col md={4} sm={6} className="mb-4 d-flex justify-content-center">
+          <Card className="shadow-sm card-hover">
             <Card.Img variant="top" src={solarPumpImage} alt="Solar Pump" />
             <Card.Body className="text-center">
               <FaArrowUpFromWaterPump

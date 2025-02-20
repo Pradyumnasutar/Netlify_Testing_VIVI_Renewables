@@ -12,7 +12,7 @@ const ServicePage = () => {
     <div>
       {/* Header Section */}
       <Container className="my-5">
-        <h1 className="text-center mb-4">OUR SERVICES</h1>
+        <h1 className="text-center mb-4 ourservicehead">OUR SERVICES</h1>
         <p className="text-center">
           At ViVi Renewables, we offer top-notch rooftop solar panel solutions to help you harness clean and sustainable energy. 
           Explore our range of services that bring efficiency and reliability to your solar energy needs.
