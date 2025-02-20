@@ -87,7 +87,7 @@ const ServicePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Open Power Access Service
                 </Card.Title>
@@ -110,7 +110,7 @@ const ServicePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Electrical Infrastructure Services (EIS)
                 </Card.Title>
@@ -132,7 +132,7 @@ const ServicePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Solar Rooftop PV Power Projects
                 </Card.Title>
@@ -153,7 +153,7 @@ const ServicePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Operation & Maintenance
                 </Card.Title>

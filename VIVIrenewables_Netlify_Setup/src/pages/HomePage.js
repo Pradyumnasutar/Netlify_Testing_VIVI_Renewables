@@ -71,8 +71,9 @@ const HomePage = () => {
       <Container className="my-5">
         <h2 className="text-center mb-4 ourservicehead">OUR SERVICES</h2>
         <Row>
+        
           {/* Solar Installation Card */}
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -80,7 +81,7 @@ const HomePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Open Power Access Service
                 </Card.Title>
@@ -95,7 +96,7 @@ const HomePage = () => {
 
           {/* Cleaning Card */}
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -103,7 +104,7 @@ const HomePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Electrical Infrastructure Services (EIS)
                 </Card.Title>
@@ -117,7 +118,7 @@ const HomePage = () => {
           </Col>
           {/* Maintenance & Repair Card */}
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -125,7 +126,7 @@ const HomePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Solar Rooftop PV Power Projects
                 </Card.Title>
@@ -138,7 +139,7 @@ const HomePage = () => {
             </Card>
           </Col>
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -146,7 +147,7 @@ const HomePage = () => {
                 alt="Solar Installation"
                 className="card-img-fixed"
               />
-              <Card.Body className="card-body-hover" style={{ height: "74%" }}>
+              <Card.Body className="card-body-hover" style={{ height: "90%" }}>
                 <Card.Title className="card-title mt-2">
                   Operation & Maintenance
                 </Card.Title>
