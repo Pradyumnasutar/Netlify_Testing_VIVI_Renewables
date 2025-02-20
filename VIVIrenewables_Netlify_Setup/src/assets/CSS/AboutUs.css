@@ -3,12 +3,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 12rem;
+    height: 13rem;
   }
   
   .row.testimonials {
     display: flex;
     align-items: stretch; /* Ensures all columns stretch to the same height */
+    justify-content: center;
   }
   
   .testimonial-box p {

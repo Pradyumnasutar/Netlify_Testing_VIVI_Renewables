@@ -20,31 +20,33 @@ const AboutUsPage = () => {
       </div>
 
       {/* Mission and Vision Section */}
-      <Row className="my-5">
-        <Col md={6} className="mb-4">
-          <div className="testimonial-box p-4 border rounded bgcolor">
-            <h3>Our Mission</h3>
-            <p>
-              Our mission is to make solar energy accessible to everyone by
-              providing efficient, cost-effective, and sustainable rooftop solar
-              solutions. We strive to empower individuals and businesses to
-              harness the power of the sun while reducing their carbon
-              footprint.
-            </p>
-          </div>
-        </Col>
-        <Col md={6} className="mb-4">
-          <div className="testimonial-box p-4 border rounded bgcolor">
-            <h3>Our Vision</h3>
-            <p>
-              We envision a world where solar energy is the primary source of
-              power, creating a cleaner, greener future for generations to come.
-              Our commitment is to lead the way in solar innovation, driving
-              positive change across India and beyond.
-            </p>
-          </div>
-        </Col>
-      </Row>
+      <div className="d-flex justify-content-center">
+        <Row className="my-5 justify-content-center">
+          <Col md={5} className="mb-4">
+            <div className="testimonial-box p-4 border rounded bgcolor">
+              <h3>Our Mission</h3>
+              <p>
+                Our mission is to make solar energy accessible to everyone by
+                providing efficient, cost-effective, and sustainable rooftop
+                solar solutions. We strive to empower individuals and businesses
+                to harness the power of the sun while reducing their carbon
+                footprint.
+              </p>
+            </div>
+          </Col>
+          <Col md={5} className="mb-4">
+            <div className="testimonial-box p-4 border rounded bgcolor">
+              <h3>Our Vision</h3>
+              <p>
+                We envision a world where solar energy is the primary source of
+                power, creating a cleaner, greener future for generations to
+                come. Our commitment is to lead the way in solar innovation,
+                driving positive change across India and beyond.
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </div>
 
       {/* Our Values Section */}
       <Row className="my-5">
@@ -88,12 +90,13 @@ const AboutUsPage = () => {
       </Row>
 
       {/* Testimonials Section */}
+      <div className="d-flex justify-content-center">
       <Row className="my-5 testimonials">
         <Col md={12}>
           <h3>What Our Customers Say</h3>
-          <Row>
+          <Row className="justify-content-center">
             {/* Testimonial 1 */}
-            <Col md={6} className="mb-4">
+            <Col md={5} className="mb-4">
               <div className="testimonial-box p-4 border rounded bgcolor">
                 {/* <img src={testimonialImg1} alt="Customer 1" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
                 <h5 className="mt-3">Kishor Pande</h5>
@@ -107,7 +110,7 @@ const AboutUsPage = () => {
               </div>
             </Col>
             {/* Testimonial 2 */}
-            <Col md={6} className="mb-4">
+            <Col md={5} className="mb-4">
               <div className="testimonial-box p-4 border rounded bgcolor">
                 {/* <img src={testimonialImg2} alt="Customer 2" style={{ width: '80px', height: '80px', borderRadius: '50%' }} /> */}
                 <h5 className="mt-3">Sandesh Shelar</h5>
@@ -123,6 +126,7 @@ const AboutUsPage = () => {
           </Row>
         </Col>
       </Row>
+</div>
 
       {/* FAQ Section */}
       <Row className="my-5">
