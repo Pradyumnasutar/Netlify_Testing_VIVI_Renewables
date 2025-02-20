@@ -71,9 +71,8 @@ const HomePage = () => {
       <Container className="my-5">
         <h2 className="text-center mb-4 ourservicehead">OUR SERVICES</h2>
         <Row>
-        
           {/* Solar Installation Card */}
-          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem"}}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -96,7 +95,7 @@ const HomePage = () => {
 
           {/* Cleaning Card */}
 
-          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -118,7 +117,7 @@ const HomePage = () => {
           </Col>
           {/* Maintenance & Repair Card */}
 
-          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -139,7 +138,7 @@ const HomePage = () => {
             </Card>
           </Col>
 
-          <Col md={3} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"

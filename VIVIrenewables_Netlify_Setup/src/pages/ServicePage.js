@@ -79,7 +79,7 @@ const ServicePage = () => {
 
         <Row>
           {/* Solar Installation Card */}
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -102,7 +102,7 @@ const ServicePage = () => {
 
           {/* Cleaning Card */}
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -124,7 +124,7 @@ const ServicePage = () => {
           </Col>
           {/* Maintenance & Repair Card */}
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
@@ -145,7 +145,7 @@ const ServicePage = () => {
             </Card>
           </Col>
 
-          <Col md={4} className="mb-4" style={{ height: "18rem" }}>
+          <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
                 variant="top"
