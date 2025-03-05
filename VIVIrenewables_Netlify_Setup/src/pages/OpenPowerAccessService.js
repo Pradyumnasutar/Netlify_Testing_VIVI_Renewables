@@ -2,7 +2,7 @@ import React from "react"; // Import React
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap styles
 import "animate.css"; // Import animate.css for animations (optional)
 import "font-awesome/css/font-awesome.min.css"; // Import FontAwesome for icons
-import howithelpdig from "../assets/images/how-it-helps-diagram.jpg";
+//import howithelpdig from "../assets/images/how-it-helps-diagram.jpg";
 import '../assets/CSS/OpenPowerAccess.css';
 const OpenPowerAccessService = () => {
   return (
@@ -87,12 +87,12 @@ const OpenPowerAccessService = () => {
             <div className="col-lg-12">
               <div className="" id="custom-margin">
               
-                <img
+                {/* <img
                   className="wow fadeInLeft"
                   src={howithelpdig}
                   alt="How it helps diagram"
                   style={{ visibility: "visible", animationName: "fadeInLeft" }}
-                />
+                /> */}
               </div>
             </div>
             <div className="col-lg-12">
