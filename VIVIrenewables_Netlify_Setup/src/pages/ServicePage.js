@@ -193,7 +193,7 @@ const ServicePage = () => {
                   Our team offers expert maintenance and repair services to
                   ensure your solar panels are always functioning at their best.{" "}
                 </Card.Text>
-                <a href="/operation-maintenance" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
+                <a href="/test22" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
               </Card.Body>
             </Card>
           </Col>

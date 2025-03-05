@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { FaCheckCircle, FaBroom, FaDollarSign, FaClock, FaEye } from "react-icons/fa";
 import solarImage from "../assets/images/operationmaintenance1.jpg"; // Ensure the image path is correct
 
-const OperationMaintenancePage = () => {
+function OperationMaintenancePage(){
   return (
     <div>
       {/* Top Section: Importance of O&M */}
