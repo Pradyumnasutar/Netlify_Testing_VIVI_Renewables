@@ -1,0 +1,24 @@
+#cardcol{
+    height: 20rem;
+}
+#cardimg{
+    height: 225%;
+}
+#cardbody{
+    height: 60%;
+    flex-grow: 1;
+}
+.card-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+    display: block;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .help-section {
+    background: linear-gradient(to right, #005f39, #008f5a); /* Green gradient */
+    padding: 60px 20px;
+  }
+  

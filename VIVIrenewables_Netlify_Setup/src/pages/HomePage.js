@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 import solar1 from "../assets/3d-solar-panel-system.jpg";
 
 import solar01 from "../assets/rooftop-slider-9-1.jpg";
@@ -9,10 +9,11 @@ import solar02 from "../assets/solarcleaning.jpg";
 import solar3 from "../assets/homeSolar.jpg";
 import solar03 from "../assets/gera-plaza.jpg";
 import CustomerInquiryForm from "../components/CustomerInquiryForm";
-import solarInstallationImg from "../assets/images/engineer.jpg"; // Update the path to your actual image
-import maintenanceImg from "../assets/images/rooftopAidesign.webp"; // Update the path to your actual image
-import transmitionImg from "../assets/images/transmitionline2.jpg";
-import cleaningImg from "../assets/images/solar-panels.jpg";
+import ServicePage from "./ServicePage";
+// import solarInstallationImg from "../assets/images/engineer.jpg"; // Update the path to your actual image
+//import maintenanceImg from "../assets/images/rooftopAidesign.webp"; // Update the path to your actual image
+//import transmitionImg from "../assets/images/transmitionline2.jpg";
+//import cleaningImg from "../assets/images/solar-panels.jpg";
 import collectEnergyImg from "../assets/collectEnergy.png"; // Example image
 import convertPowerImg from "../assets/convertPower.png"; // Example image
 import transmitPowerImg from "../assets/transmitPower.png"; // Example image
@@ -68,10 +69,10 @@ const HomePage = () => {
       </Container>
 
       {/* Our Services Section */}
-      <Container className="my-5">
+      {/* <Container className="my-5">
         <h2 className="text-center mb-4 ourservicehead">OUR SERVICES</h2>
         <Row>
-          {/* Solar Installation Card */}
+          
           <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem"}}>
             <Card className="text-center h-100 card-hover">
               <Card.Img
@@ -93,7 +94,7 @@ const HomePage = () => {
             </Card>
           </Col>
 
-          {/* Cleaning Card */}
+          
 
           <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
@@ -115,7 +116,7 @@ const HomePage = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* Maintenance & Repair Card */}
+          
 
           <Col md={4} className="mb-4 d-flex justify-content-center" style={{ height: "18rem" }}>
             <Card className="text-center h-100 card-hover">
@@ -157,7 +158,9 @@ const HomePage = () => {
             </Card>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
+
+      <ServicePage />
 
       {/* Floating WhatsApp Icon */}
       <a
