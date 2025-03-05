@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FaArrowsAlt, FaAward, FaClock } from "react-icons/fa"; // Icons for the section
 
-const EISPage = () => {
+function EISPage (){
   return (
     <Container fluid className="my-5">
       {/* Our Stand Section */}

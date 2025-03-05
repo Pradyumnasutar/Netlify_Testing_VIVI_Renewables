@@ -4,7 +4,9 @@ import "animate.css"; // Import animate.css for animations (optional)
 import "font-awesome/css/font-awesome.min.css"; // Import FontAwesome for icons
 //import howithelpdig from "../assets/images/how-it-helps-diagram.jpg";
 import '../assets/CSS/OpenPowerAccess.css';
-const OpenPowerAccessService = () => {
+
+// const OpenPowerAccessService = () => {
+function OpenPowerAccessService (){
   return (
     <div className="container">
       {/* Introduction Area */}
@@ -153,5 +155,5 @@ const OpenPowerAccessService = () => {
 
     </div>
   );
-};
+}
 export default OpenPowerAccessService;
