@@ -106,7 +106,7 @@ const ServicePage = () => {
                   cheaper power under Intra/Interstate.
                 </Card.Text>
                 <a
-                  href="/openpowerservice"
+                  href="/services/openpowerservice"
                   className="text-danger fw-bold mt-0 d-block"
                 >
                   Explore More →
@@ -139,7 +139,7 @@ const ServicePage = () => {
                   ensuring safe and efficient energy distribution for your
                   needs.{" "}
                 </Card.Text>
-                <a href="/eis-service" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
+                <a href="/services/eis-service" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
               </Card.Body>
             </Card>
           </Col>
@@ -167,7 +167,7 @@ const ServicePage = () => {
                   solar rooftop PV power projects for sustainable energy
                   solutions.{" "}
                 </Card.Text>
-                <a href="/solar-rooftop" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
+                <a href="/services/solar-rooftop" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
               </Card.Body>
             </Card>
           </Col>
@@ -193,7 +193,7 @@ const ServicePage = () => {
                   Our team offers expert maintenance and repair services to
                   ensure your solar panels are always functioning at their best.{" "}
                 </Card.Text>
-                <a href="/test22" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
+                <a href="/services/operation-maintenance" className="text-danger fw-bold mt-0 d-block">Explore More →</a>
               </Card.Body>
             </Card>
           </Col>

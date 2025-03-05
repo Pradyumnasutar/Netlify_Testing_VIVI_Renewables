@@ -12,8 +12,8 @@ import FooterComponent from './components/Footer';
 import OpenPowerAccessService from './pages/OpenPowerAccessService';
 import EISPage from './pages/EISPage';
 import SolarRooftopPage from './pages/SolarRooftopPage';
-//import OperationMaintenancePage from './pages/OperationMaintenancePage';
-import Test22 from './pages/Test22';
+import OperationMaintenancePage from './pages/OperationMaintenancePage';
+//import Test22 from './pages/Test22';
 
 function App() {
   return (
@@ -25,11 +25,11 @@ function App() {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/inquiry" element={<CustomerInquiryPage />} />
-        <Route path="/openpowerservice" element={<OpenPowerAccessService />} />
-        <Route path="/eis-service" element={<EISPage />} />
-        <Route path="/solar-rooftop" element={<SolarRooftopPage />} />
-        {/* <Route path="/operation-maintenance" element={<OperationMaintenancePage />} /> */}
-        <Route path="/test22" element={<Test22 />} />
+        <Route path="/services/openpowerservice" element={<OpenPowerAccessService />} />
+        <Route path="/services/eis-service" element={<EISPage />} />
+        <Route path="/services/solar-rooftop" element={<SolarRooftopPage />} />
+        <Route path="/services/operation-maintenance" element={<OperationMaintenancePage />} />
+        {/* <Route path="/test22" element={<Test22 />} /> */}
       </Routes>
       <FooterComponent />  {/* Footer at the bottom of every page */}
     </Router>
