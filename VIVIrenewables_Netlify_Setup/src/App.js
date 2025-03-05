@@ -12,7 +12,7 @@ import FooterComponent from './components/Footer';
 import OpenPowerAccessService from './pages/OpenPowerAccessService';
 import EISPage from './pages/EISPage';
 import SolarRooftopPage from './pages/SolarRooftopPage';
-import OperationMaintenancePage from './pages/OperationMaintenancePage';
+//import OperationMaintenancePage from './pages/OperationMaintenancePage';
 import Test22 from './pages/Test22';
 
 function App() {
