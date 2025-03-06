@@ -2,13 +2,52 @@ import React from "react"; // Import React
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap styles
 import "animate.css"; // Import animate.css for animations (optional)
 import "font-awesome/css/font-awesome.min.css"; // Import FontAwesome for icons
-//import howithelpdig from "../assets/images/how-it-helps-diagram.jpg";
+
+import headerImage from "../assets/images/eispage1.jpg"; // Ensure the image path is correct
 import '../assets/CSS/OpenPowerAccess.css';
 
-// const OpenPowerAccessService = () => {
-function OpenPowerAccessService (){
+const OpenPowerAccessService = () => {
   return (
     <div className="container">
+      {/* Header Section with Background Image and Blur Effect */}
+      <div
+        className="header-banner"
+        style={{
+          position: "relative",
+          backgroundImage: `url(${headerImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "300px",
+          
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          color: "white",
+          overflow: "hidden",
+        }}
+      >
+        {/* Blue Blur Effect Overlay */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(58, 39, 119, 0.4)", // Semi-transparent blue overlay
+            backdropFilter: "blur(3px)", // Blur effect
+          }}
+        ></div>
+
+        {/* Page Titles */}
+        <div style={{ position: "relative", zIndex: 1, paddingLeft: "8%" }}>
+          <h2 style={{ fontSize: "2.5rem", marginBottom: "10px" }}>SERVICES</h2>
+          <h4 style={{ color: "green", fontSize: "1.5rem", fontWeight: "700" }}>
+            OPERATION & MAINTENANCE SERVICES
+          </h4>
+        </div>
+      </div>
       {/* Introduction Area */}
       <div
         className="tm-section services-area tm-padding-section bg-white wow fadeInUp"
