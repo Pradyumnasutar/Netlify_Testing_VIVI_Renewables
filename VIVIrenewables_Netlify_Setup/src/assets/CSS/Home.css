@@ -55,3 +55,6 @@
 .card-body-hover{
     height: 60%;
 }
+.custom-carousel{ 
+  max-width: none;
+}

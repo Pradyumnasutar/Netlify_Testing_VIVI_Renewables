@@ -1,0 +1,16 @@
+.top-bar {
+    background-color: #5da55d;
+    color: white;
+    padding: 2px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;  /* Align content to the right */
+    padding-right: 20px;  /* Add some spacing on the right */
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 20px;  /* Spacing between Call Us and Email */
+    align-items: center;
+  }
+  

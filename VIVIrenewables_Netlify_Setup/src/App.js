@@ -1,14 +1,15 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopBar from './components/TopBar'; // Import TopBar component
 import NavbarComponent from './components/Navbar';
+import FooterComponent from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
 import ServicePage from './pages/ServicePage';
 import ProductsPage from './pages/ProductsPage';
 import CustomerInquiryPage from './components/CustomerInquiryForm';
-import FooterComponent from './components/Footer';
 import OpenPowerAccessService from './pages/OpenPowerAccessService';
 import EISPage from './pages/EISPage';
 import SolarRooftopPage from './pages/SolarRooftopPage';
@@ -17,7 +18,8 @@ import OperationMaintenancePage from './pages/OperationMaintenancePage';
 function App() {
   return (
     <Router>
-      <NavbarComponent />  {/* Navbar at the top */}
+      <TopBar /> {/* Top bar with Call Us and Email */}
+      <NavbarComponent /> {/* Navbar below the top bar */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUsPage />} />
@@ -29,7 +31,7 @@ function App() {
         <Route path="/solar-rooftop" element={<SolarRooftopPage />} />
         <Route path="/operation-maintenance" element={<OperationMaintenancePage />} />
       </Routes>
-      <FooterComponent />  {/* Footer at the bottom of every page */}
+      <FooterComponent /> {/* Footer at the bottom of every page */}
     </Router>
   );
 }

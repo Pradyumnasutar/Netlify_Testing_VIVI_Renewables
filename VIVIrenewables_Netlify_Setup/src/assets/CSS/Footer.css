@@ -33,6 +33,8 @@
   padding: 3rem 0; /* Equivalent to py-5 */
 }
 .listgroupitem {
-  background-color: black; /* Bootstrap dark */
-  color: lightgray; /* Bootstrap light text */
+  background-color: transparent !important; /* Remove white background */
+  color: white !important; /* Ensure text remains white */
+  border: none !important; /* Remove any unwanted borders */
+  padding: 5px 0; /* Adjust spacing */
 }

@@ -1,6 +1,51 @@
+/* Navbar Styling */
+.navbar {
+  background-color: white !important;
+  padding: 12px 0;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 50px; /* Reduced size */
+  width: auto;
+  max-width: 230px;
+}
+
+/* Navigation Links */
+.navlink {
+  color: #22bb1c !important;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
 
 .navlink:hover {
-    background-color: #d6d6d6 !important;
-    border-radius: 15%;
-    color: black;
+  color: #4371c5 !important;
+}
+
+/* Contact Us Button */
+.nav-button {
+  background: #4caf50 !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background: #388e3c !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navlink {
+    text-align: center;
+    padding: 10px 0;
   }
+
+  .nav-button {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+  }
+}
